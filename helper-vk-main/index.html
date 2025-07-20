@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helper</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Helper</h1>
+        <p>Your companion in emergencies</p>
+    </header>
+
+    <!-- Emergency Section -->
+    <section class="emergency-section">
+        <h2>Emergency Assistance</h2>
+        <div class="container">
+            <button id="sos-btn" class="btn">SOS</button>
+            <button id="location-btn" class="small-btn">Get Location</button>
+            <button id="share-location-btn" class="small-btn">Share Location</button>
+        </div>
+        <p id="location-info">Latitude: Not available, Longitude: Not available</p>
+    </section>
+
+    <!-- SOS Messages Modal -->
+    <div id="sos-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-sos-modal" class="close">&times;</span>
+            <h3>Select Emergency Message:</h3>
+            <ul id="sos-messages-list"></ul>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <h2>Your Location</h2>
+        <div id="map" style="height: 300px;"></div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors-section">
+        <h2>Find Nearby Doctors</h2>
+        <div class="container">
+            <button id="doctors-btn" class="btn">Search Doctors</button>
+        </div>
+    </section>
+
+    <!-- First Aid Section -->
+    <section class="first-aid-section">
+        <h2>First Aid Information</h2>
+        <div class="container">
+            <button id="first-aid-btn" class="btn">First Aid Tips</button>
+        </div>
+        <div id="first-aid-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h3>Select Injury Type:</h3>
+                <button class="injury-btn" data-injury="cut">Cut</button>
+                <button class="injury-btn" data-injury="fracture">Fracture</button>
+                <button class="injury-btn" data-injury="burn">Burn</button>
+                <p id="first-aid-info"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+        <h2>Feedback</h2>
+        <textarea id="feedback-input" placeholder="Your feedback..."></textarea>
+        <button id="submit-feedback" class="btn">Submit Feedback</button>
+    </section>
+
+    <!-- Contact Us Section -->
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:helper@example.com">helper@example.com</a></p>
+        <p>Address: 123 Health St., Wellness City</p>
+    </footer>
+
+    <script src="demo.js"></script>
+</body>
+</html>

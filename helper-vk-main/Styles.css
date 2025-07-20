@@ -1,0 +1,213 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Section Styles */
+section {
+    margin: 30px auto;
+    text-align: center;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Emergency Section Styles */
+.emergency-section,
+.map-section,
+.feedback-section {
+    background-color: #292929;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.map-section {
+    background-color: #333;
+}
+
+/* Location Info Styles */
+#location-info {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+/* Button Styles */
+.btn,
+.small-btn {
+    background-color: #db1616; /* Red color for emergency */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em;
+}
+
+.btn:hover,
+.small-btn:hover,
+.btn:focus,
+.small-btn:focus {
+    background-color: #a30000;
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* SOS Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #292929;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* SOS Message Styles */
+#sos-messages-list {
+    list-style: none;
+    padding: 0;
+}
+
+#sos-messages-list li {
+    background-color: #db1616;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sos-messages-list li:hover,
+#sos-messages-list li:focus {
+    background-color: #a30000;
+}
+
+/* Feedback Section Styles */
+.feedback-section {
+    background-color: #292929;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#feedback-input {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none; /* Prevent resizing */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #292929;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .btn,
+    .small-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    #feedback-input {
+        width: 100%;
+    }
+}
